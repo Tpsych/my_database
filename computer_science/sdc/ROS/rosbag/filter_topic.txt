@@ -1,0 +1,5 @@
+Keep only two topic:
+    rosbag filter old_bag.bag new_bag.bag "topic == '/stereo/left/image_rect' or topic == '/stereo/right/image_rect'"
+
+Filter time stamp
+    rosbag filter 2018-09-14-00-49-09.bag filtered_time.bag "t.to_sec()<=1536857400.37 + 50"

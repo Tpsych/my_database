@@ -1,0 +1,5 @@
+An n x n matrix A is invertible iff A is row equivalent to In.
+In the case, any sequence of elementary row operations that 
+reduces A to In also transforms In into the inverse of A(A^-1)
+
+[A|In] ~ [In|A^-1]

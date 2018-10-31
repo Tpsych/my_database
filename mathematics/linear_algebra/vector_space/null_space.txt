@@ -1,0 +1,20 @@
+Consider the following system of homogeneous equations:
+
+	X1 - 3X2 -2X3 = 0
+	-5X1 + 9X2 + X3 = 0
+
+In matrix form, the system is written as Ax = 0, where
+
+	A = [1  -3  -2
+             -5  9   1 ]
+
+Recall that the set of all x that satisfy the homogeneous
+equations is called the solution set of the system.
+
+Often it is convenient to relate this set directly to the
+Matrix A and the equation Ax = 0.
+
+We call the set if x that satisfy Ax = 0 the null space of 
+the matrix A.
+
+	Nul A = {x:x is in Rn and Ax = 0}

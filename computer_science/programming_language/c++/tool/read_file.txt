@@ -1,0 +1,29 @@
+    // read raw data
+    fstream file;
+    char buffer[20];
+    vector<Eigen::Vector2f> point_vectors;
+
+    file.open("../data/data_1.txt", ios::in);
+    if(!file)
+        cout << "fail to open the file" << endl;
+    else
+    {
+        while (!file.eof())
+        {
+            Eigen::Vector2f point_vector;
+            file.getline(buffer,sizeof(buffer));
+            if(buffer != '\0')
+            {
+                char *token;
+                token = strtok(buffer, separator);
+                if(token != NULL)
+                {
+                    point_vector(0) = atof(token);
+                    token = strtok(NULL, separator);
+                    point_vector(1) = atof(token);
+                    cout << point_vector(0) << ' ' << point_vector(1) << endl;
+                }
+            }
+        }
+        file.close();
+    }

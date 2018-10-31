@@ -1,0 +1,2 @@
+1. Not affected by extreme values too much
+2. Good for geometric series

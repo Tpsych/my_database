@@ -1,0 +1,10 @@
+Category:
+	[1] Bar chart
+	[2] Pie chart
+	[3] Annular chart
+
+Continuous Number Group:
+	[1] Histogram
+	[2] Stem-and-leaf
+	[3] Scatter diagram
+	[4] Line plot

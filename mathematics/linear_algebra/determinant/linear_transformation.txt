@@ -1,0 +1,9 @@
+Let T:R^2 -> R^2 be the linear transformation determined 
+by a 2*2 matrix A. If S is a parallelogram in R^2, then
+
+	{area if T(S)} = |detA| * {area of S}
+
+If T is determined by a 3*3 matrix A, and if S is a 
+parallelepiped in R^3, then
+
+	{volume of T(S)} = {detA} * {volume of S} 

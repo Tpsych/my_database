@@ -1,0 +1,1 @@
+Col A = {b: b = Ax for some x in Rn}

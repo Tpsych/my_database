@@ -1,0 +1,6 @@
+A transformation (or function or mapping) T from Rn to Rm is a rule that
+assigns to each vector in Rn a vector T(x) in Rm. The set Rn is called the
+domain of T, and Rm is called codomain of T. The notation T: Rn -> Rm
+indicates that the domain of T is Rn and the codomain is Rm. For x in Rn,
+the vector T(x) in Rm is called the image of x. The set of all images T(x)
+is called the range of T.

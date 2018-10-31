@@ -1,0 +1,13 @@
+// method is get/set method suffix
+// name is the key in hash table
+#define POINTER_PROPERTY(type,method,name) \
+        type get##method(){return (type)_pointer_map[name];} \
+        void set##method(type value){_pointer_map[name]=value;}
+
+class InMemoryPerson : Person {
+public:
+    POINTER_PROPERTY(char *,Name,"name")
+
+private:
+    std::map<const char *,void *> _pointer_map;
+};

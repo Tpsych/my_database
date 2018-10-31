@@ -1,0 +1,65 @@
+GCC: 4.5. You must specify the -std=c++11 option
+
+Basic syntax and elements for Lambda expressions:
+	[captures] (parameters) -> returnTypesDeclaration {lambdaStatements;}
+
+[captures]: specifies which outside variables are available for the lambda function
+            and whether they should be captured by value or reference.
+            An empty capture clause, [ ], indicates that the body of the lambda expression accesses no variables in the enclosing scope.
+            [&] means all variables that you refer to are captured by reference, and [=] means they are captured by value.
+            You can use a default capture mode, and then specify the opposite mode explicitly for specific variables. For example, 
+            if a lambda body accesses the external variable total by reference and the external variable factor by value, 
+            then the following capture clauses are equivalent:
+
+            [&total, factor]  
+	    [factor, &total]  
+            [&, factor]  
+            [factor, &]  
+            [=, &total]  
+            [&total, =]  
+
+( parameters ): This is the optional parameters list, also known as the lambda declarator. You can omit the parameters list if you 
+                want a function that takes zero arguments.
+
+-> returnTypeDeclaration: This is the return type. Most of the time, compilers can deduce the return type of the lambda expression 
+                          when you have zero or one return statement. However, if it makes it easier to understand the code, you can 
+                          specify the return type. There are some differences among compilers regarding the automatic detection of return 
+                          types when you have more than one return statement because the standard doesn't guarantee the automatic detection 
+                          of return types. Notice that the specification of the return types is based on the optional return value syntax
+                          introduced with C++11, which puts the return value after the function.
+
+{ lambdaStatements; }: This is the lambda body. The statements within the lambda body can access the captured variables and the parameters.
+
+C++ includes useful generic functions like std::for_each and std::transform, 
+which can be very handy. Unfortunately they can also be quite cumbersome to use, 
+particularly if the functor you would like to apply is unique to the particular function.
+
+--------------------------------------------
+#include <algorithm>
+#include <vector>
+
+namespace {
+  struct f {
+    void operator()(int) {
+      // do something
+    }
+  };
+}
+
+void func(std::vector<int>& v) {
+  f f;
+  std::for_each(v.begin(), v.end(), f);
+}
+---------------------------------------------
+
+If you only use f once and in that specific place it seems overkill to be writing a whole class just to do something trivial and one off.
+
+C++11 introduces lambdas allow you to write an inline, anonymous functor to replace the struct f. 
+For small simple examples this can be cleaner to read (it keeps everything in one place)
+ and potentially simpler to maintain, for example in the simplest form:
+
+-------------------------------------------------------------------------
+void func3(std::vector<int>& v) {
+  std::for_each(v.begin(), v.end(), [](int) { /* do something here*/ });
+}
+-------------------------------------------------------------------------

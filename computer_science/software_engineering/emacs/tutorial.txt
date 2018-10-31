@@ -1,0 +1,19 @@
+[1] In ansi-term:
+        M-x becomes C-x M-x
+
+[2] C-x b to select buffer
+[3] Press esc twice to leave mode in vim
+[4] M-g M-g
+        go to line
+[5] C-x C-q
+        Edible Dired mode -> C-x C-s to save
+[6] C-x u : undo
+[7] M-% : search and replacement
+[8] C-u 15 up: move cursor up 15 lines
+[9] C-5 up: move cursor up 5 lines
+[10] M-/: auto-completion
+[11] M-x rgrep: fuzzy search
+[12] M-x find-name-dired: find file by name
+[13] C-x 5 o: other frame
+[14] C-SPC: select region of words
+[15] M-x string-insert-rectangle: insert string to the begining of the select lines

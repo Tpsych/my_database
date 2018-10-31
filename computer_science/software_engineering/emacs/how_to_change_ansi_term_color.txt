@@ -1,0 +1,8 @@
+You can change colors of both the term and ansi-term modes by customizing the term group. The steps are as follow:
+
+    First, run the command customize-group by typing M-x customize-group
+
+    And then type the term group
+
+Now, you are free to change the color of the ansi-term mode. For example, to change the color of folders, in my Emacs setting, I can chang it by modifying the Term Color Green face option.
+

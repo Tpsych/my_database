@@ -1,0 +1,9 @@
+Brandon Rohrer's Blog:
+    https://brohrer.mcknote.com/zh-Hant/statistics/how_bayesian_inference_works.html
+
+wikipedia:
+    From the point of view of Bayesian inference, MLE is a special case of maximum a 
+    posteriori estimation (MAP) that assumes a uniform prior distribution of the parameters.
+
+    In frequentist inference, MLE is one of several methods to get estimates of parameters 
+    without using prior distributions.

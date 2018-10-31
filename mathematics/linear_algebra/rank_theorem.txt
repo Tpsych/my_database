@@ -1,0 +1,4 @@
+If a matrix A has n columns, then rank A + dim Nul A = n
+
+**rank A: number of vectors in basis of Col A**
+**dim Nul A: number of free variables**

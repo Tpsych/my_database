@@ -1,0 +1,10 @@
+1. T(u + v) = T(u) + T(v)
+2. T(cu) = c T(u)
+
+**Every matix transformation is a linear transformation**
+
+**For every T, there exists an unique matrix A for it. In fact,
+A is the m*n matrix whose jth column is the vector T(ej), where 
+ej is the jth column of the identitiy matrix in Rn **
+
+Note: c is the scalar

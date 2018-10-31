@@ -1,0 +1,8 @@
+o: Open url, bookmark or history
+O: Open url, bookmark or history in a new tab
+H/L: go back/forward in history
+x/X: kill/restore tab
+f: Open link in the current tab
+F: Open link in the new tab
+/: search (n/N) down/forward search
+

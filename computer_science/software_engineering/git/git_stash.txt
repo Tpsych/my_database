@@ -1,0 +1,8 @@
+git stash pop
+	throws away the topmost stash after applying it
+
+git stash apply
+	leaves the topmost stash for possible later reuse
+
+git stash drop
+	drops the topmost stash

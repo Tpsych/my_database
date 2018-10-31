@@ -1,0 +1,2 @@
+An equation that expresses A as a product
+of two or more matrices.

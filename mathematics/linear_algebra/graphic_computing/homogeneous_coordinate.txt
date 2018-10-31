@@ -1,0 +1,7 @@
+(x, y, z, w), where w is used to express distance
+
+to R3, the relationship would be
+	(x/w, y/w, z/w)
+
+Homogeneous coordinate is useful for common linear
+transformation in R3
