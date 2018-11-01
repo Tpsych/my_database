@@ -1,0 +1,10 @@
+Arithmatic mean
+    1. Keep the essence of the data
+
+Geometric mean
+    1. Not affected by extreme values too much
+    2. Good for geometric series
+    3. Used to calculate growth rate
+
+Harmonic mean:
+    1. Used to calculate speed
