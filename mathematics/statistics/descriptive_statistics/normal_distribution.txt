@@ -1,0 +1,2 @@
+From standard normal distribution to normal distribution:
+    Normal Distribution = (S.D. * Standard Normal Distribution) + Mean Of Normal Distribution
