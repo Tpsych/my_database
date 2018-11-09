@@ -31,5 +31,23 @@ Output: Value of a is 10
 
 Why do we need an extra bracket around function pointers like fun_ptr in above example?
 If we remove bracket, then the expression “void (*fun_ptr)(int)” becomes “void *fun_ptr(int)” 
-which is declaration of a function that returns void pointer. See following post for details.
+which is declaration of a function that returns void pointer.
 
+---------------------------------------
+// Array of function pointers
+int sum(int a, int b);
+int subtract(int a, int b);
+int mul(int a, int b);
+int div(int a, int b);
+
+int (*p[4]) (int x, int y);
+
+int main(void)
+{
+  int result;
+  int i, j, op;
+
+  p[0] = sum; /* address of sum() */
+  p[1] = subtract; /* address of subtract() */
+  p[2] = mul; /* address of mul() */
+  p[3] = div; /* address of div() */
