@@ -1,0 +1,8 @@
+int a[5] = {1,2,3,4,5};
+int *p = (*int)()(&a+1);
+
+Though a and &a share the same memory address,
+the results of (a+1) and (&a+1) are very different.
+
+a+1 refer to the address of a plus sizeof(int)
+&a+1 refer to the address of a plus sizeof(array)
