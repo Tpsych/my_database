@@ -1,0 +1,21 @@
+int i[] = {100, 200, 300, 400, 500};
+int *pi = i;
+
+printf("%d\n", *pi++);
+printf("%d\n", *pi);
+printf("%d\n", *++pi);
+printf("%d\n", *pi);
+printf("%d\n", ++*pi);
+printf("%d\n", *pi);
+
+------------------------------------
+100
+200
+300
+300
+301
+301
+-----------------------------------
+note:
+    [1] priority of * and ++ is the same
+    [2] from right to left

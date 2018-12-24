@@ -1,0 +1,20 @@
+int arr[] = {100, 200, 300};
+int *ptr = arr;
+
+&arr[0] = 0x22FF60; // equal arr
+&arr[1] = 0x22FF64;
+&arr[2] = 0s22FF68;
+
+arr = arr + 0 = 0x22FF60;
+arr + 1 = 0x22FF64;
+arr + 2 = 0x22FF68;
+
+arr[0] = 100;
+*(arr + 0) = 100;
+*(arr + 1) = 200;
+
+ptr + 0 = ptr = 0x22FF60;
+ptr + 1 = 0x22FF64;
+
+ptr[0] = *(ptr + 0) = 100;
+ptr[1] = *(ptr + 1) = 200;
