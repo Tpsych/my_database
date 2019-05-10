@@ -17,3 +17,4 @@
 [13] C-x 5 o: other frame
 [14] C-SPC: select region of words
 [15] M-x string-insert-rectangle: insert string to the begining of the select lines
+[16] C-s Search
