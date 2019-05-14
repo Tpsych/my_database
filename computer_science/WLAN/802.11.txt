@@ -1,0 +1,11 @@
+The services and protocols specified in IEEE 802 map to the lower two layers
+(Data Link and Physical) of the seven-layer OSI networking reference model.
+In fact, IEEE 802 splits the OSI Data Link Layer into two sub-layers named
+logical link control (LLC) and media access control (MAC),
+ so the layers can be listed like this:
+
+Data link layer
+     LLC sublayer
+     MAC sublayer
+
+Physical layer
