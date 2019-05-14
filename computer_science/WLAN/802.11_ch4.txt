@@ -30,3 +30,5 @@ MBSS
     5. Two different entities (mesh STA and access point) can exist in
        the collocated device, and the mesh BSS is hidden to STAs that
        associate to the access point. (ref. 13.11.5)
+Integration with LAN
+    Through portal(normally integrated with AP)
