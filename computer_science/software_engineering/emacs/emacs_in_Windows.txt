@@ -1,0 +1,1 @@
+/c/Users/Mark/AppData/Roaming/.emacs.d/init.el
