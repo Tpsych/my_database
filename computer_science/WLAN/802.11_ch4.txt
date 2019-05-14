@@ -2,16 +2,25 @@ The services and protocols specified in IEEE 802 map to the lower two layers
 (Data Link and Physical) of the seven-layer OSI networking reference model.
 In fact, IEEE 802 splits the OSI Data Link Layer into two sub-layers named
 logical link control (LLC) and media access control (MAC),
- so the layers can be listed like this:
+so the layers can be listed like this:
 
-Data link layer
-     LLC sublayer
-         Frames the Network layer packet
-         Identify the Network layer protocol
-     MAC sublayer
-         Address the frame
-         Mark the begining and end of the frame
+    Data link layer
+         LLC sublayer
+             Frames the Network layer packet
+             Identify the Network layer protocol
+         MAC sublayer
+             Address the frame
+             Mark the begining and end of the frame
 
-Physical layer
+    Physical layer
 
+IBSS
+    Ad hoc: STA directly communicate with each others
 MBSS:
+    1. Similar to IBSS, however STA can communicate thru other devices
+    2. Mesh STA do not directly communicate with nonmesh STA
+    3. Mesh STA communicate with other nonmesh STA thru DS
+    4. Data moves between an MBSS and the DS via one or more mesh gate
+    5. Two different entities (mesh STA and access point) can exist in
+       the collocated device, and the mesh BSS is hidden to STAs that
+       associate to the access point. (ref. 13.11.5)
