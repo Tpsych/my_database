@@ -6,6 +6,12 @@ logical link control (LLC) and media access control (MAC),
 
 Data link layer
      LLC sublayer
+         Frames the Network layer packet
+         Identify the Network layer protocol
      MAC sublayer
+         Address the frame
+         Mark the begining and end of the frame
 
 Physical layer
+
+MBSS:
