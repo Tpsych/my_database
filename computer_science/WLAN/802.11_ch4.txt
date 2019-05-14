@@ -13,10 +13,16 @@ so the layers can be listed like this:
              Mark the begining and end of the frame
 
     Physical layer
-
+AP
+    Any entity that has station (STA) functionality and provides access to the
+    distribution services, via the wireless medium (WM) for associated STAs.
+Mesh gate
+    Any entity that has mesh station (STA) functionality and provides access
+    to one or more distribution systems, via the wireless medium (WM) for the
+    mesh basic service set (MBSS)
 IBSS
     Ad hoc: STA directly communicate with each others
-MBSS:
+MBSS
     1. Similar to IBSS, however STA can communicate thru other devices
     2. Mesh STA do not directly communicate with nonmesh STA
     3. Mesh STA communicate with other nonmesh STA thru DS
