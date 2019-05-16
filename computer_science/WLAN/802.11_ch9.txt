@@ -27,3 +27,10 @@
         mechanism. EDCA for contention-based, MCCA for contention-free.
 
 9-3 DCF
+    Use RTS/CTS to avoid contention conflicts and hidden nodes problem.
+    NAV is used to preserve a period of usage time
+
+    Dual CTS: to make CTS hear by both STBC STA and non-STBC STA
+
+    Multiple access technology:
+        

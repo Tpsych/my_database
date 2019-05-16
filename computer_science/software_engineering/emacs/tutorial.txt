@@ -18,3 +18,4 @@
 [14] C-SPC: select region of words
 [15] M-x string-insert-rectangle: insert string to the begining of the select lines
 [16] C-s Search
+[17] C-shift-backspace: delete the whole line
