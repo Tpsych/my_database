@@ -30,3 +30,4 @@
 (setq-default tab-width 4)
 (electric-indent-mode 0)
 (setq-default c-basic-offset 4)
+(set-face-attribute 'default nil :height 150)
