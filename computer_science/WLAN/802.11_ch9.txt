@@ -1,3 +1,5 @@
+Chapter 9: Mac sublayer functional introduction
+
 9-1 Introduction
     MAC layer is the sublayer of Data-link layer
 
@@ -33,4 +35,17 @@
     Dual CTS: to make CTS hear by both STBC STA and non-STBC STA
 
     Multiple access technology:
-        
+        FDMA;OFDMA;CSMA/CD;CSMA/CA
+
+9-4 PCF
+    PC: point coordinator
+
+    DCF and PCF can work simultaneously.
+        Contention-free period is protected by NAV(carried in Beacon)
+        It's period will last till CF-END
+
+    PCF frame:
+        1: transmitted only by PC:
+            Data+CF-Poll¡BData+CF-ACK+CF-Poll¡BCF-Poll and CF-ACK+CF-Poll
+        2: transmitted by both PC and STA
+            Data¡BData+CF-ACK¡BNull and CF-ACK
