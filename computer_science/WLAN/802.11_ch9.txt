@@ -1,0 +1,29 @@
+9-1 Introduction
+    MAC layer is the sublayer of Data-link layer
+
+    The MAC sublayer channel access control mechanisms that
+    make it possible for several network nodes to communicate
+    within a multiple access network that incorporates a shared medium
+
+9-2 MAC archetecture
+    It's important to avoid collision and higher to efficiency of data
+    transmission.
+
+    1. DCF:
+        Also known as CSMA/CA, a contention-based transfer
+    2. PCF:
+        There is an AP controling the access for other STAs, a
+        contention-free transfer.
+    3. HCF:
+        802.11e enhance the DCF and PCF, only usable in QoS network.
+
+        3-1 EDCA:
+            Enhancement of DCF, introduce TXOP, contention-based.
+        3-2 HCCA:
+            Enhancement of PCF, hybrid coordinator collocated with
+            the AP, controls the access to the medium.
+    4. MCF:
+        Only usable in MBSS, has both contention-based and contention-free
+        mechanism. EDCA for contention-based, MCCA for contention-free.
+
+9-3 DCF
