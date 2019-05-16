@@ -1,0 +1,10 @@
+Overview of MAC service
+    Data service
+        Provide ability to exchange MSDU (MAC serveice data unit)
+        between STAs
+    QoS facility
+        Use TID (traffic identifier) the level of the service
+        (bit 0~3 in QoS control field)
+
+        QoS priority 0~7 (UP), maps to 4 different AC,
+        each will start a contention window to win TXOP
