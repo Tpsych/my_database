@@ -57,3 +57,15 @@ Chapter 9: Mac sublayer functional introduction
             3. Destination address
             4. Sequence control field: number for defragmentation
             5. More fragmentation indicator
+9-11 A-MSDU operation
+     Frame aggregation. A-MSDU should have MSDUs with the same DA/SA map
+     to the same RA/TA values.
+
+9-19 HCF (Hybrid Coordination Function)
+    EDCA and HCCA
+
+    9.19.2 EDCA (Enhanced Distributed Channel Access)
+        1. Enhancement of DCF
+        2. Contention-based
+        3. Introduce TXOP
+        4. The levels of prority in EDCA are called access categories (ACs)
