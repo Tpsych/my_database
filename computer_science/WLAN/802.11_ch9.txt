@@ -49,3 +49,11 @@ Chapter 9: Mac sublayer functional introduction
             Data+CF-Poll¡BData+CF-ACK+CF-Poll¡BCF-Poll and CF-ACK+CF-Poll
         2: transmitted by both PC and STA
             Data¡BData+CF-ACK¡BNull and CF-ACK
+9-5 Fragmentation and Defragmentation
+    Defragmentation:
+        According to the frame header:
+            1. Frame type
+            2. Address of the sender, obtained from the Address2 field
+            3. Destination address
+            4. Sequence control field: number for defragmentation
+            5. More fragmentation indicator
