@@ -1,0 +1,22 @@
+Operation    Git         SVN
+複製數據庫    git clone    svn checkout
+提交         git commit   svn commit
+查看提交的詳細記錄    git show   svn cat
+確認狀態             git status    svn status
+確認差異             git diff      svn diff
+確認記錄             git log       svn log
+增加                git add       svn add
+移動                git mv        svn mv
+刪除                git rm        svn rm
+取消修改            git checkout/git reset    svn revert (※1)
+建立分支            git branch                svn copy (※2)
+切換分支            git checkout              svn switch
+合併               git merge                 svn merge
+建立標籤            git tag                   svn copy (※2)
+更新               git pull/git fetch        svn update
+上傳到遠端          git push                  svn commit (※3)
+忽視檔案清單       .gitignore                 .svnignore
+
+※1. SVN的 revert 是用來取消修改，但Git的 revert 是用來取消提交。即使是同樣的命令，在SVN和Git裡的含義是不同的。
+※2. SVN的分支與標籤在構造上是相同的，但在Git上明顯是不一樣的。
+※3. SVN沒有本地端數據庫/遠端數據庫的概念，所以一提交馬上就會上傳到在遠端裡。但Git的本地端數據庫和遠端數據庫的表現方法是不一樣的。
