@@ -1,0 +1,12 @@
+1. Clock & reset: clk, rst#
+2. Initiator control signal: frame#, irdy#, *idsel
+3. Target control signal: devsel#, trdy#, stop#
+4. Data & address: ad[31:0]
+5. Command & byte enable: cbe[3:0]
+6. Arbitration: *req#, *gnt#
+7. Parity check & error report
+8. 64b extension
+9. optional signal
+
+Note that * means it's dedicated pin,others are shared pins
+          # means low active
