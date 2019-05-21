@@ -1,0 +1,5 @@
+1. Power on, read BIOS, OS settling
+2. Scan & read configure space of every PCI slot
+3. Resouce allocation computation
+4. Write configure space of every PCI slot
+5. IO begin normal function
