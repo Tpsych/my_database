@@ -1,0 +1,29 @@
+10.3 STA Authentication and Association
+
+    10.3.1 The state variable expresses the relationship between the local STA and the remote STA
+
+        State 1:
+            1. Initial start state
+            2. Unauthenticated
+            3. Unassociated
+
+        State 2:
+            1. Authenticated
+            2. Unassociated
+
+        State 3:
+            1. Authenticated
+            2. Associated
+            3. Pending RSN Authenticated
+            4. 1x authentication not finished
+            5. 1x control port still blocked
+
+        State 4:
+            1. Authenticated
+            2. Associated
+
+        Note: 4-way handshaking between state 3 and 4
+
+    10.3.3 Frame filtering based on STA state
+
+    https://wiki.realtek.com/display/CN3SD7IKB/Chapter+10+-+MLME#Chapter10-MLME-10.2.1.12APagingfunction
