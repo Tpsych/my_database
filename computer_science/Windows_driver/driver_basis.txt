@@ -1,0 +1,19 @@
+CPU --------(I/O request)-------> Device X
+
+Device X's stack:
+    driver A: Device_Object_A
+    driver B: Device_Object_B
+              .
+              .
+              .
+              .
+              .
+
+Note:
+    1. Device_Object is a structure defined by MS
+    2. I/O request is issued by IRP(I/O request packets)
+
+Sometimes more than one device stack is involved in processing an I/O request.
+Regardless of how many device stacks are involved, the overall sequence of
+drivers that participate in an I/O request is called the driver stack for the
+request.
