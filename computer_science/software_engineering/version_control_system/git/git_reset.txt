@@ -1,2 +1,4 @@
 git reset file_name
     cancel git add
+git reset --hard HEAD
+    reset to the HEAD
